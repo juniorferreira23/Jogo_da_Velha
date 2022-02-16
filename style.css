@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+
+
+.popup {
+    width: 100%;
+    max-width: 370px;
+    height: 0;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px auto;
+    visibility: hidden;
+    transition: 1s;
+    overflow-y: hidden;
+}
+
+.popup-show{
+    height: 120px;
+    visibility: visible;
+}
+
+
+.popup h2 {
+    padding: 10px 0 15px 0;
+}
+
+.popup button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    color: wheat;
+}
+
+
+
+.board {
+    width: 370px;
+    margin: 20px auto;
+}
+
+.square {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: antiquewhite;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row .active {
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+}
