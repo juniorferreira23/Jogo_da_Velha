@@ -45,6 +45,14 @@ function popUp(){
     if(fimDeJogo == true){
         let popUp = document.querySelector('.popup')
         popUp.classList.add('popup-show')
+
+        let textPop = document.querySelector('.popup h2')
+        
+        if(winner == 'shield'){
+            textPop.innerHTML = `Vitória do ${winner}!`
+        }else{
+            textPop.innerHTML = `Vitória da ${winner}!`
+        }
     }
 }
 

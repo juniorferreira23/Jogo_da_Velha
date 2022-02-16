@@ -8,31 +8,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
-    <div class="popup">
-        <h2>Vitória</h2>
-        <button id="btn-continue">Continuar</button>
-    </div>
-    <div class="board">
-        <div class="row">
-            <div id="0" class="square"><div class="icon"></div></div>
-            <div id="1" class="square"><div class="icon"></div></div>
-            <div id="2" class="square"><div class="icon"></div></div>
+    <header>
+        <h1># Jogo da Velha #</h1> 
+    </header>
+    <section class="main">
+        <div class="popup">
+            <h2>Vitória</h2>
+            <button id="btn-continue">Continuar</button>
         </div>
-        <div class="row">
-            <div id="3" class="square"><div class="icon"></div></div>
-            <div id="4" class="square"><div class="icon"></div></div>
-            <div id="5" class="square"><div class="icon"></div></div>
+        <div class="board">
+            <div class="row">
+                <div id="0" class="square"><div class="icon"></div></div>
+                <div id="1" class="square"><div class="icon"></div></div>
+                <div id="2" class="square"><div class="icon"></div></div>
+            </div>
+            <div class="row">
+                <div id="3" class="square"><div class="icon"></div></div>
+                <div id="4" class="square"><div class="icon"></div></div>
+                <div id="5" class="square"><div class="icon"></div></div>
+            </div>
+            <div class="row">
+                <div id="6" class="square"><div class="icon"></div></div>
+                <div id="7" class="square"><div class="icon"></div></div>
+                <div id="8" class="square"><div class="icon"></div></div>
+            </div>
         </div>
-        <div class="row">
-            <div id="6" class="square"><div class="icon"></div></div>
-            <div id="7" class="square"><div class="icon"></div></div>
-            <div id="8" class="square"><div class="icon"></div></div>
+        <div class="scoreboard">
+            <div class="scoreboard-shield">
+                <div class="icon-score-shield"></div>
+                <div class="score-shield"></div>
+            </div>
+            <div class="scoreboard-sword">
+                <div class="icon-score-sword"></div>
+                <div class="score-sword"></div>
+            </div>
+            <button id="btn-reset-score">Reset</button>
         </div>
-    </div>
+    </section>
+    <footer>
+        <p>Developer Junior Ferreira</p>
+        <a href="https://github.com/juniorferreira23" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="http://www.linkedin.com/in/junior-ferreira-988763230" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/suncloud_jf/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
 
-
-
+    <script src="https://kit.fontawesome.com/705972476d.js" crossorigin="anonymous"></script>
     <script src="./game.js"></script>
     <script src="./interface.js"></script>
 </body>

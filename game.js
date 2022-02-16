@@ -18,83 +18,81 @@ var turn = 0
 
 var fimDeJogo = false
 
-var win = ''
+var winner = ''
 
 function playerWin(){
 
     
 
-    if(board[0] ==  players[0] && board[1] == players[0] && board[2] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
-        win = players[0]
-        // setTimeout(function(){
-        //     alert('Vitória do Shield')
-        // },200)
+    if(board[0] ==  players[0] && board[1] == players[0] && board[2] == players[0]){        
+        winner = players[0]
         fimDeJogo = true
 
-    }else if(board[3] == players[0] && board[4] == players[0] && board[5] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+    }else if(board[3] == players[0] && board[4] == players[0] && board[5] == players[0]){       
+        winner = players[0]
         fimDeJogo = true
 
-    }else if(board[6] == players[0] && board[7] == players[0] && board[8] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+    }else if(board[6] == players[0] && board[7] == players[0] && board[8] == players[0]){       
+        winner = players[0]
         fimDeJogo = true
 
-    }else if(board[0] == players[0] && board[3] == players[0] && board[6] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+    }else if(board[0] == players[0] && board[3] == players[0] && board[6] == players[0]){       
+        winner = players[0]
         fimDeJogo = true
 
-    }else if(board[1] == players[0] && board[4] == players[0] && board[7] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+    }else if(board[1] == players[0] && board[4] == players[0] && board[7] == players[0]){       
+        winner = players[0]
         fimDeJogo = true
 
-    }else if(board[2] == players[0] && board[5] == players[0] && board[8] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+    }else if(board[2] == players[0] && board[5] == players[0] && board[8] == players[0]){       
+        winner = players[0]
         fimDeJogo = true
 
-    }else if(board[0] == players[0] && board[4] == players[0] && board[8] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+    }else if(board[0] == players[0] && board[4] == players[0] && board[8] == players[0]){       
+        winner = players[0]
         fimDeJogo = true
 
     }else if(board[2] == players[0] && board[4] == players[0] && board[6] == players[0]){
-        console.log('acabou o jogo, vitoria do shield')
+        winner = players[0]
         fimDeJogo = true
     }
 
 
     // Vitoria da Sword
     else if(board[0] == players[1] && board[1] == players[1] && board[2] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[3] == players[1] && board[4] == players[1] && board[5] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[6] == players[1] && board[7] == players[1] && board[8] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[0] == players[1] && board[3] == players[1] && board[6] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[1] == players[1] && board[4] == players[1] && board[7] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[2] == players[1] && board[5] == players[1] && board[8] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[0] == players[1] && board[4] == players[1] && board[8] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
 
     }else if(board[2] == players[1] && board[4] == players[1] && board[6] == players[1]){
-        console.log('acabou o jogo, vitoria do sword')
+        winner = players[1]
         fimDeJogo = true
     }
+
+    if(board)
 }
 
 function resetVariables(){
@@ -107,5 +105,5 @@ function resetVariables(){
 
     fimDeJogo = false
 
-    win = ''
+    winner = ''
 }
