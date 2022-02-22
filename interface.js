@@ -16,7 +16,7 @@ buttonContinue()
 function addingImage(square) {
 
     // console.log('evento iniciado')
-    if(fimDeJogo == false){
+    if(gameOver == false){
 
         if(!square.firstChild.classList.contains('active')){
 
@@ -34,6 +34,7 @@ function addingImage(square) {
             }
         }
     }
+    round++
     // console.log(board)
     playerWin()
     // console.log(win)
@@ -42,7 +43,7 @@ function addingImage(square) {
 
 function popUp(){
 
-    if(fimDeJogo == true){
+    if(gameOver == true){
         let popUp = document.querySelector('.popup')
         popUp.classList.add('popup-show')
 
@@ -50,8 +51,10 @@ function popUp(){
         
         if(winner == 'shield'){
             textPop.innerHTML = `Vitória do ${winner}!`
-        }else{
+        }else if(winner == 'sword'){
             textPop.innerHTML = `Vitória da ${winner}!`
+        }else if(winner == 'draw'){
+            textPop.innerHTML = `Empate!`
         }
     }
 }

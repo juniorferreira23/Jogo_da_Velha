@@ -16,9 +16,11 @@ var players = ['shield','sword']
 
 var turn = 0
 
-var fimDeJogo = false
+var gameOver = false
 
 var winner = ''
+
+var round = 0
 
 function playerWin(){
 
@@ -26,73 +28,76 @@ function playerWin(){
 
     if(board[0] ==  players[0] && board[1] == players[0] && board[2] == players[0]){        
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[3] == players[0] && board[4] == players[0] && board[5] == players[0]){       
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[6] == players[0] && board[7] == players[0] && board[8] == players[0]){       
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[0] == players[0] && board[3] == players[0] && board[6] == players[0]){       
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[1] == players[0] && board[4] == players[0] && board[7] == players[0]){       
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[2] == players[0] && board[5] == players[0] && board[8] == players[0]){       
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[0] == players[0] && board[4] == players[0] && board[8] == players[0]){       
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[2] == players[0] && board[4] == players[0] && board[6] == players[0]){
         winner = players[0]
-        fimDeJogo = true
+        gameOver = true
     }
 
 
     // Vitoria da Sword
     else if(board[0] == players[1] && board[1] == players[1] && board[2] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[3] == players[1] && board[4] == players[1] && board[5] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[6] == players[1] && board[7] == players[1] && board[8] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[0] == players[1] && board[3] == players[1] && board[6] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[1] == players[1] && board[4] == players[1] && board[7] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[2] == players[1] && board[5] == players[1] && board[8] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[0] == players[1] && board[4] == players[1] && board[8] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
 
     }else if(board[2] == players[1] && board[4] == players[1] && board[6] == players[1]){
         winner = players[1]
-        fimDeJogo = true
+        gameOver = true
     }
 
-    if(board)
+    if(round == 9){
+        winner = 'draw'
+        gameOver = true
+    }
 }
 
 function resetVariables(){
@@ -103,7 +108,9 @@ function resetVariables(){
 
     turn = 0
 
-    fimDeJogo = false
+    gameOver = false
 
     winner = ''
+
+    round = 0
 }
